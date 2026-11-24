@@ -21,3 +21,22 @@ main {
   margin: 1.5rem 0;
 }
 
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.timer-controls button {
+  padding: 0.5rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  background: #fff8ed;
+  color: inherit;
+  font: inherit;
+}
+
+.timer-controls button:disabled {
+  opacity: 0.55;
+}
