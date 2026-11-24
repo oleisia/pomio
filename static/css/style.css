@@ -40,3 +40,25 @@ main {
 .timer-controls button:disabled {
   opacity: 0.55;
 }
+
+.timer-controls button[aria-pressed="true"] {
+  background: #49383e;
+  color: #fff8ed;
+}
+
+.cycle-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cycle-indicators span {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+
+.cycle-indicators .completed {
+  background: currentColor;
+}

@@ -11,11 +11,21 @@
     <h1>Pomio</h1>
     <p>A free, customizable Pomodoro focus dashboard.</p>
 
+    <div class="timer-controls" role="group" aria-label="Session mode">
+      <button type="button" data-mode="focus" aria-pressed="true">Focus</button>
+      <button type="button" data-mode="shortBreak" aria-pressed="false">Short break</button>
+      <button type="button" data-mode="longBreak" aria-pressed="false">Long break</button>
+    </div>
+    <p aria-live="polite">Current mode: <strong id="current-mode">Focus</strong></p>
     <div id="timer-display" class="timer" role="timer" aria-label="Pomodoro time remaining">25:00</div>
     <div class="timer-controls">
       <button id="start-timer" type="button">Start</button>
       <button id="pause-timer" type="button" disabled>Pause</button>
       <button id="reset-timer" type="button">Reset</button>
+    </div>
+    <p id="cycle-progress" role="status">0 of 4 focus sessions completed</p>
+    <div class="cycle-indicators" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
     </div>
   </main>
 
