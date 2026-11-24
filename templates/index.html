@@ -11,8 +11,12 @@
     <h1>Pomio</h1>
     <p>A free, customizable Pomodoro focus dashboard.</p>
 
-    <div class="timer" aria-label="Pomodoro timer">25:00</div>
-    <p>Timer controls are coming soon.</p>
+    <div id="timer-display" class="timer" role="timer" aria-label="Pomodoro time remaining">25:00</div>
+    <div class="timer-controls">
+      <button id="start-timer" type="button">Start</button>
+      <button id="pause-timer" type="button" disabled>Pause</button>
+      <button id="reset-timer" type="button">Reset</button>
+    </div>
   </main>
 
   <script src="{{ url_for('static', filename='js/timer.js') }}"></script>
